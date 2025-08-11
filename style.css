@@ -713,3 +713,21 @@
         font-weight: 600;
         text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
     }
+
+    .social-icon-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .social-icon-wrapper:hover a {
+        transform: scale(1.15);
+    }
+
+    .social-icon-wrapper:hover a.FacebookLogo::after,
+    .social-icon-wrapper:hover a.InstagramLogo::after,
+    .social-icon-wrapper:hover a.XLogo::after,
+    .social-icon-wrapper:hover a.LineLogo::after {
+        opacity: 1;
+        pointer-events: auto;
+    }
